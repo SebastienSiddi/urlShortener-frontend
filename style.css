@@ -1,0 +1,158 @@
+body {
+  width: 100vw;
+  margin: 0;
+}
+
+.light-mode {
+  background-color: "#ecece8";
+}
+
+.checkbox {
+  display: none;
+}
+
+.label {
+  display: inline-block;
+  height: 30px;
+  width: 50px;
+  background: #c7c7bc;
+  position: relative;
+  transition: all 0.3s;
+  border-radius: 20px;
+}
+
+.label:after {
+  content: "";
+  height: 25px;
+  width: 25px;
+  background: #ffffff;
+  position: absolute;
+  top: 2px;
+  left: 6px;
+  transition: all 0.3s;
+  border-radius: 50%;
+}
+
+.checkbox:checked + .label:after {
+  transform: translateX(15px);
+}
+
+.checkbox:checked + label {
+  background: #2861fd;
+}
+
+.logoSun {
+  height: 15px;
+  margin-right: 10px;
+}
+
+.logoMoon {
+  height: 15px;
+  margin-left: 10px;
+  margin-right: 30px;
+}
+
+#modeButton {
+  display: flex;
+  align-items: center;
+}
+
+#container {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-rows: repeat(12, 1fr);
+  grid-template-columns: repeat(12, 1fr);
+}
+
+#header {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 13;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: "#ffffff";
+}
+
+#logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#logo {
+  height: 180px;
+  margin-left: 50px;
+}
+
+#name {
+  font-size: 40px;
+  font-family: solitreo;
+  margin-left: 50px;
+  color: #000000;
+}
+
+#h1 {
+  font-size: 50px;
+  font-family: solitreo;
+  margin-left: 50px;
+  color: #000000;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+#h2 {
+  font-size: 30px;
+  font-family: solitreo;
+  margin-left: 50px;
+  color: #000000;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+#content {
+  grid-row-start: 2;
+  grid-row-end: 8;
+  grid-column-start: 1;
+  grid-column-end: 13;
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  align-items: center;
+}
+
+#inputUrl {
+  height: 35px;
+  width: 280px;
+  border-radius: 10px;
+  margin-bottom: 5px;
+  background-color: #dadacd;
+  border: none;
+}
+
+#inputOption {
+  height: 35px;
+  width: 280px;
+  border-radius: 10px;
+  margin-top: 30px;
+  background-color: #dadacd;
+  border: none;
+}
+
+a {
+  margin-top: 30px;
+  font-size: 30px;
+  color: #2861fd;
+}
+
+#btn-bananaLink {
+  height: 40px;
+  width: 300px;
+  margin-top: 30px;
+  background-color: #2861fd;
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+}

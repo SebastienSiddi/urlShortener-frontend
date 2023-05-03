@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>urlShortener</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Solitreo&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="light-mode">
+    <div id="container">
+      <div id="header">
+        <div id="logo-container">
+          <img id="logo" src="images/logo.png" />
+          <h1 id="name">The Banana URL Shortener</h1>
+        </div>
+        <div id="modeButton">
+          <img class="logoSun" src="images/sun.png" alt="" />
+          <input type="checkbox" id="toggle" class="checkbox" />
+          <label for="toggle" class="label"></label>
+          <img class="logoMoon" src="images/moon.png" alt="" />
+        </div>
+      </div>
+      <div id="content">
+        <h1 id="h1">Crée ton shortlink Banana.fr gratuitement</h1>
+        <h2 id="h2">
+          Colle ton URL ci-dessous et récupères ta shorty Banana URL :
+        </h2>
+        <input type="text" id="inputUrl" placeholder="https://monurl.com/" />
+        <input
+          type="text"
+          id="inputOption"
+          placeholder="fin personnalisée (optionnel)"
+        />
+        <button type="button" id="btn-bananaLink">Créer mon lien Banana</button>
+        <a id="shortenedUrl" href=""></a>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
